@@ -10,12 +10,9 @@ module.exports = {
       'lg': "1510px",
     },
     extend: {
-      fontSize: {
-        "text-base": "0.9rem"
-      },
       colors: {
         'default': '#fff',
-        'primary': '#61DB98',
+        'primary': '#61db98',
         'secondary': '#ebfff5',
         'dark': '#212121',
         'bgColor': 'rgb(240, 239, 239)',
@@ -23,23 +20,22 @@ module.exports = {
         "extras": "#788fdb"
       },
       width: {
-        "200px": "200px",
-        "100px": "100px",
-        "600px": "600px",
         '15': '15%',
-        '85': '85%',
         '55': "55%",
         '60': "60%",
-        '80': '80%',
         '70': '70%',
+        '80': '80%',
+        '85': '85%',
         '90': '90%',
+        '95': '95%',
       },
       height: {
+        '50vh': "50vh",
         '70vh': "70vh" 
       }
     },
     fontFamily: {
-      "spaceGrotesk": ['"Space Grotesk", sans-serif']
+      "sora": ['"Sora", sans-serif']
     },
     borderRadius: {
       'none': '0',
@@ -47,6 +43,7 @@ module.exports = {
       default: '0.25rem',
       'md': '0.5rem',
       'lg': '1rem',
+      'xl': '2rem',
     }
     
   },
