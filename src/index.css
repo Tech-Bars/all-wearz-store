@@ -5,7 +5,7 @@
 @layer base{
     body{
         @apply 
-        font-spaceGrotesk
+        font-sora
         transition-all
         duration-300
     }
@@ -130,7 +130,7 @@
 
     input{
         @apply
-        font-spaceGrotesk
+        font-sora
         w-full
         rounded-md
         bg-secondary
