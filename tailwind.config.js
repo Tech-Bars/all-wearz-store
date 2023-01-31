@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,6 +20,9 @@ module.exports = {
         'bgColor': 'rgb(240, 239, 239)',
         'grey': 'rgb(57, 56, 56)',
         "extras": "#788fdb"
+      },
+      backgroundImage: {
+        "header": "url('/public/cover.avif')"
       },
       width: {
         '15': '15%',
