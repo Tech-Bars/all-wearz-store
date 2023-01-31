@@ -128,16 +128,24 @@
         cursor-pointer
     }
 
+    input[type=submit]{
+        @apply
+        bg-primary
+        p-3
+    }
+
     input{
         @apply
         font-sora
         w-full
         rounded-md
-        bg-secondary
-        p-2
+        p-3
         text-base
         resize-none
         font-light
+        border
+        border-solid
+        border-primary
         caret-primary
     }
     input:hover{
