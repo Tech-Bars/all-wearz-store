@@ -1,9 +1,12 @@
 import React from 'react'
+import Categories from '../components/Home/Categories'
+import Newarrivals from '../components/Home/Newarrivals'
 
 export const Home = () => {
   return (
     <div>
-        <h1 className='text-blue-900'>Home</h1>
+        <Categories />
+        <Newarrivals />
     </div>
   )
 }
