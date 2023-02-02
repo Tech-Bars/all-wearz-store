@@ -6,7 +6,7 @@ import assesories from './assets/assesories.jpg'
 
 const Categories:React.FC = () => {
   return (
-    <div className="px-5 font-sora">
+    <div className="px-5 font-sora pb-20">
             <h1 className="text-base pb-3 font-semibold">Shop by categories</h1>
       <div  className="w-full flex gap-5  items-center">
         <div className="w-[325px] h-[14.6rem] bg-cover bg-no-repeat">

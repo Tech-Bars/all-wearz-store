@@ -4,7 +4,7 @@ import Vector from './assets/Vector.svg'
 
 const Newarrivals:React.FC = () => {
   return (
-    <div className="mt-5 px-5 flex w-full gap-5 justify-center bg-[#D9D9D9] h-[368px] items-center font-sora">
+    <div className="px-5 flex w-full gap-5 justify-center bg-[#D9D9D9] h-[368px] items-center font-sora">
       <div className=" w-2/5 flex-col flex gap-5">
             <h1 className=" font-semibold text-4xl">New Arrivals</h1>
             <span className="font-medium text-2xl">Discover Amazing Deals</span>
