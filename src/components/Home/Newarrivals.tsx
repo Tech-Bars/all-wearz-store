@@ -9,7 +9,7 @@ const Newarrivals:React.FC = () => {
       <div className=" w-2/5 flex-col flex gap-5">
             <h1 className=" font-semibold text-4xl">New Arrivals</h1>
             <span className="font-medium text-2xl">Discover Amazing Deals</span>
-            <button className="flex items-center gap-3 bg-blue py-3 px-5 text-base text-white rounded-sm w-[162px]">
+            <button className="flex items-center gap-3 transition-all duration-300 delay-100 ease-in-out hover:scale-110 bg-blue py-3 px-5 text-base text-white rounded-sm w-[162px]">
               Shop Now 
             <img src={Vector} alt="vector"  />
             </button>

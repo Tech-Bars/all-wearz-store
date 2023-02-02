@@ -8,22 +8,26 @@ const Categories:React.FC = () => {
   return (
     <div className="px-5 font-sora pb-20">
             <h1 className="text-base pb-3 font-semibold">Shop by categories</h1>
-      <div  className="w-full flex gap-5  items-center">
-        <div className="w-[325px] h-[14.6rem]">
-            <img src={shirt} alt="shirt" className="h-full w-full" />
+      <div  className="w-full flex gap-5  items-center overflow-x-scroll  scrollbar-hide scroll-smooth">
+        <div className="w-[20rem] h-[14.6rem] shrink-0">
+            <img src={shirt} alt="shirt" className="h-[85%] w-full" />
             <span className="">Shirt</span>
         </div>
-        <div className="w-[325px] h-[14.6rem] bg-grey" >
-            <img src={pant} alt="shirt" className="h-full w-[100%] border" />
+        <div className="w-[20rem] h-[14.6rem] shrink-0" >
+            <img src={pant} alt="shirt" className="h-[85%] w-[100%] border" />
             <span className="">Trouser</span>
         </div>
-        <div className="w-[325px] h-[14.6rem] bg-cover bg-no-repeat">
-            <img src={assesories} alt="shirt" className="h-full w-[100%] border" />
+        <div className="w-[20rem] h-[14.6rem] shrink-0">
+            <img src={assesories} alt="shirt" className="h-[85%] w-[100%] border" />
             <span className="">Assesories</span>
         </div>
-        <div className="w-[325px] h-[14.6rem] bg-cover bg-no-repeat">
-            <img src={shoes} alt="shirt" className="h-full w-[100%]" />
+        <div className="w-[20rem] h-[14.6rem] shrink-0">
+            <img src={shoes} alt="shirt" className="h-[85%] w-[100%]" />
             <span className="">Shoes</span>
+        </div>
+        <div className="w-[20rem] h-[14.6rem] shrink-0">
+            <img src={shirt} alt="shirt" className="h-[85%] w-full" />
+            <span className="">Shirt</span>
         </div>
       </div>
        
