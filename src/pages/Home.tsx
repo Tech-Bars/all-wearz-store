@@ -8,13 +8,12 @@ import Footer from '../components/Footer'
 
 export const Home = () => {
   return (
-    <div>
+    <div className='w-[95%] m-auto'>
         <Categories />
         <Populardeals />
         <Newarrivals />
         <Shirts />
         <Shoes />
-        <Footer />
     </div>
   )
 }

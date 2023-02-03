@@ -4,7 +4,7 @@ import Vector from './assets/Vectorblack.svg'
 
 const Shirts:React.FC = () => {
   return (
-  <div className="w-full px-5 font-sora">
+  <div className="w-full px-5 font-sora flex  flex-col">
     <div className="flex justify-between w-full py-3">
             <h1 className="font-semibold text-2xl underline underline-offset-4">Shirts</h1>
             <button className="flex gap-5 items-center font-semibold transition-all duration-300 delay-100 ease-in-out hover:scale-110"> View more <img src={Vector} alt="arrow icon" className="text-base" /></button>
