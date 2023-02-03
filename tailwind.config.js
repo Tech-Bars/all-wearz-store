@@ -16,6 +16,7 @@ module.exports = {
         'default': '#fff',
         'primary': '#61db98',
         'secondary': '#ebfff5',
+        'blue': '#3B82F6',
         'dark': '#212121',
         'bgColor': 'rgb(240, 239, 239)',
         'grey': 'rgb(57, 56, 56)',
@@ -52,5 +53,5 @@ module.exports = {
     }
     
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
