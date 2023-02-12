@@ -22,6 +22,7 @@ export const Nav = () => {
             <Link to="/category/accessories">Accessories</Link>
         </div>
         }
+
         {showNav 
         &&
         <div className='flex flex-col justify-center items-center fixed md:relative lg:relative left-0 right-0 top-0 min-h-screen md:min-h-0 lg:min-h-0 bg-primary lg:flex-row md:flex-row gap-6'>
@@ -44,6 +45,7 @@ export const Nav = () => {
             </Link>
         </div>
         }
+
         {!showNav 
         &&
         <div className='flex justify-center items-center gap-6'>
@@ -55,8 +57,9 @@ export const Nav = () => {
             </Link>
         </div>
         }
+
+        {/* show menu icon */}
         <div className='md:hidden lg:hidden' onClick={() => setShowNav(true)}>
-            {/* show menu icon */}
             <h1>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.25 5.25H7.5V6.75H23.25V5.25Z" fill="black"/>
