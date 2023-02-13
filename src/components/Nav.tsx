@@ -47,7 +47,7 @@ export const Nav = () => {
         }
 
         
-        <div className='hidden lg:md:flex md:flex justify-center items-center gap-6'>
+        <div className='hidden lg:flex md:flex justify-center items-center gap-6'>
             <Link to="/cart">
                 <img src={cart} alt="cart icon" />
             </Link>
