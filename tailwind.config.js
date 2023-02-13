@@ -23,7 +23,7 @@ module.exports = {
         "extras": "#788fdb"
       },
       backgroundImage: {
-        "header": "url('/public/cover.avif')"
+        "headerImage": "url('/public/all-wearz.jpeg')"
       },
       width: {
         '15': '15%',
