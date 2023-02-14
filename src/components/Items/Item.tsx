@@ -1,17 +1,21 @@
 import React from 'react'
+import { faGreaterThan, faLessThan } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import shirt from '../Home/assets/shirt.jpg'
 
 const Item:React.FC = () => {
   return (
-    <div className="w-full flex lg:flex-row flex-col lg:gap-20 gap-5 pb-20 ">
-     <div className="lg:w-1/2 w-full flex  lg:justify-end items-center">
+    <div className="w-full flex lg:flex-row flex-col lg:gap-0 gap-5 pb-20 ">
+     <div className="lg:w-1/2 w-full flex  lg:justify-center items-center relative">
+      <span className="absolute cursor-pointer right-14 p-4 text-primary bg-secondary transition-all duration-300 delay-75 ease-in-out hover:scale-105 hover:bg-primary hover:text-white"><FontAwesomeIcon icon={faGreaterThan} /></span>
+      <span  className="absolute cursor-pointer left-14 p-4 text-primary bg-secondary rounded-sm transition-all duration-300 delay-75 ease-in-out hover:scale-105 hover:bg-primary hover:text-white"><FontAwesomeIcon icon={faLessThan} /></span>
           <img src={shirt} alt="shirt img" className="lg:w-3/5 "/>
      </div>
-     <div className="lg:w-1/2 w-full lg:justify-start items-center">
+     <div className="lg:w-1/2 w-full flex lg:justify-center  items-center">
      <div className="lg:w-3/5 px-3 pt-3 pb-10 flex flex-col gap-5 bg-secondary rounded-md">
         <span className="flex text-2xl gap-2">
-          <h2>{`Home >`}</h2>
-          <h2>{`Shrts >>`}</h2>
+          <h2 className="cursor-pointer">{`Home >`}</h2>
+          <h2 className="cursor-pointer">{`Shrts >>`}</h2>
           <h2 className="underline underline-offset-2">Fannel</h2>
         </span>
         <span>
@@ -22,9 +26,9 @@ const Item:React.FC = () => {
           <h2 className="text-sm text-black font-medium">$100</h2>
         </span>
         <span className="flex gap-3 ">
-          <img src={shirt} alt="shirt img" className="w-12 h-12" />
-          <img src={shirt} alt="shirt img" className="w-12 h-12" />
-          <img src={shirt} alt="shirt img" className="w-12 h-12"/>
+          <img src={shirt} alt="shirt img" className="w-12 h-12 cursor-pointer transition-all duration-300 delay-75 ease-in-out hover:scale-110" />
+          <img src={shirt} alt="shirt img" className="w-12 h-12 cursor-pointer  transition-all duration-300 delay-75 ease-in-out hover:scale-110" />
+          <img src={shirt} alt="shirt img" className="w-12 h-12 cursor-pointer  transition-all duration-300 delay-75 ease-in-out hover:scale-110"/>
         </span>
         <span className="flex flex-col w-full gap-1 ">
           <h2 className="text-xl underline underline-offset-4 text-black capitalize font-medium">Item description</h2>
