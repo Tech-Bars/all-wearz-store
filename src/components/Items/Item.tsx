@@ -3,7 +3,7 @@ import shirt from '../Home/assets/shirt.jpg'
 
 const Item:React.FC = () => {
   return (
-    <div className="w-full flex lg:flex-row flex-col lg:gap-20 gap-5  ">
+    <div className="w-full flex lg:flex-row flex-col lg:gap-20 gap-5 pb-20 ">
      <div className="lg:w-1/2 w-full flex  lg:justify-end items-center">
           <img src={shirt} alt="shirt img" className="lg:w-3/5 "/>
      </div>
