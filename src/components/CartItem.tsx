@@ -21,7 +21,15 @@ const CartItem: React.FC<PropsWithChildren> = () => {
         </div>
         <div className='flex flex-col gap-4'>
             <h4>Quantity</h4>
-            <input type="number" max={50} placeholder='1' className='w-16 text-center '/>
+            <div className='flex gap-2 items-center'>
+                <p className='bg-primary w-max py-1 px-2 cursor-pointer'>
+                    -
+                </p>
+                <b>1</b>
+                <p className='bg-primary w-max py-1 px-2 cursor-pointer'>
+                    +
+                </p>
+            </div>
             <b>₦ 15,000</b>
         </div>
     </div>
