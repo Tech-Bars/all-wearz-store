@@ -6,10 +6,12 @@ import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import Itemspage from './pages/Items';
+import { Nav } from './components/Nav';
 
 function App() {
   return (
     <>
+    <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/signin' element={<Login />} />

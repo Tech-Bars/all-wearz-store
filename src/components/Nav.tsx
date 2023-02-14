@@ -8,14 +8,14 @@ export const Nav = () => {
     const [showNav, setShowNav] = useState<boolean>(false)
 
   return (
-    <div className='bg-primary z-50 flex justify-between items-center gap-4 px-4 lg:px-16 md:px-16 py-3'>
+    <div className='w-screen md:w-[85%] lg:w-[75%] bg-gray-50 border-b fixed top-0 right-0 left-0 m-auto z-50 flex justify-between items-center gap-4 px-4 lg:px-16 md:px-16 py-3'>
         <div>
-            <h3 className='text-center'>ALL WEARZ LUXURY</h3>
+            <h3 className='text-center'><b>ALL WEARZ LUXURY</b></h3>
         </div>
         {!showNav 
         && 
         <div className='hidden lg:flex md:flex gap-6'>
-            <Link to="/">New</Link>
+            <Link to="/">New Arrivals</Link>
             <Link to="/category/shirts">Shirts</Link>
             <Link to="/category/trousers">Trousers</Link>
             <Link to="/category/shoes">Shoes</Link>
