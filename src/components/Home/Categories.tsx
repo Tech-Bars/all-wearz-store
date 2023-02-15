@@ -3,29 +3,38 @@ import shirt from './assets/shirt.jpg'
 import pant from './assets/pant.jpg'
 import shoes from './assets/shoe.jpg'
 import assesories from './assets/assesories.jpg'
+import CategoryCard from './CategoryCard'
+
+const categoryData = [
+  {
+    image: shirt,
+    title: "Shirts"
+  },
+  {
+    image: pant,
+    title: "Trousers"
+  },
+  {
+    image: assesories,
+    title: "Assessories"
+  },
+  {
+    image: shoes,
+    title: "Shoes"
+  },
+]
 
 const Categories:React.FC = () => {
   return (
-    <div className="px-5 font-sora pb-20">
-            <h1 className="text-base pb-3 font-semibold">Shop by categories</h1>
-      <div  className="w-full flex gap-5 justify-between  items-center overflow-x-scroll  scrollbar-hide scroll-smooth">
-        <div className="w-[20rem] h-[14.6rem] shrink-0">
-            <img src={shirt} alt="shirt" className="h-[85%] w-full" />
-            <span className="">Shirt</span>
-        </div>
-        <div className="w-[20rem] h-[14.6rem] shrink-0" >
-            <img src={pant} alt="shirt" className="h-[85%] w-[100%] border" />
-            <span className="">Trouser</span>
-        </div>
-        <div className="w-[20rem] h-[14.6rem] shrink-0">
-            <img src={assesories} alt="shirt" className="h-[85%] w-[100%] border" />
-            <span className="">Assesories</span>
-        </div>
-        <div className="w-[20rem] h-[14.6rem] shrink-0">
-            <img src={shoes} alt="shirt" className="h-[85%] w-[100%]" />
-            <span className="">Shoes</span>
-        </div>
-        
+    <div className="font-sora my-4">
+            <h2 className="font-semibold my-4 text-extras">Shop by Categories:</h2>
+      <div  className="w-full flex gap-5 justify-between items-center overflow-x-scroll  scrollbar-hide scroll-smooth">
+        {categoryData.map((item, key) => {
+          return <CategoryCard 
+                  image={item.image}
+                  title={item.title}
+                  />
+        })}
       </div>
        
     </div>
