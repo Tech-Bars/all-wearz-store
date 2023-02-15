@@ -27,7 +27,7 @@ const categoryData = [
 const Categories:React.FC = () => {
   return (
     <div className="font-sora my-4">
-            <h2 className="font-semibold my-4 text-2xl lg:text-3xl md:text-3xl text-extras">Shop by Categories:</h2>
+            <h2 className="font-semibold my-4 text-2xl lg:text-3xl md:text-3xl text-primary">Shop by Categories:</h2>
       <div  className="w-full flex gap-5 justify-between items-center overflow-x-scroll  scrollbar-hide scroll-smooth">
         {categoryData.map((item, key) => {
           return <CategoryCard 
