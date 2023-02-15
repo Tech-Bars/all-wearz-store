@@ -4,7 +4,7 @@ import Vector from './assets/Vector.svg'
 
 const Newarrivals:React.FC = () => {
   return (
-    <div className="my-4 p-5 flex flex-col md:flex-row lg:flex-row w-full gap-5 justify-center bg-[#D9D9D9] min-h-[368px] items-center font-sora rounded-md m-auto">
+    <div className="my-4 p-5 flex flex-col md:flex-row lg:flex-row w-full gap-5 justify-center bg-[#D9D9D9] h-[368px] items-center font-sora rounded-md m-auto">
       <div className="w-full md:w-1/2 lg:w-1/2 flex-col flex gap-5 text-center items-center md:text-left lg:text-left">
             <h2 className="text-dark font-semibold text-2xl lg:text-3xl md:text-3xl">New Arrivals</h2>
             <span className="font-medium text-2xl">Discover Amazing Deals</span>
@@ -13,8 +13,8 @@ const Newarrivals:React.FC = () => {
             <img src={Vector} alt="vector" />
             </button>
       </div>
-      <div className='w-1/2'>
-          <img src={shirt} alt="" className="h-auto lg:w-[80%] md:w-[80%] m-auto" />
+      <div className='w-1/2 h-full'>
+          <img src={shirt} alt="" className="h-full lg:w-[80%] md:w-[80%] m-auto" />
       </div>
     </div>
   )
