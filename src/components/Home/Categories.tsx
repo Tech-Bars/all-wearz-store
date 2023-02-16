@@ -1,8 +1,8 @@
 import React from 'react'
-import shirt from './assets/shirt.jpg'
-import pant from './assets/pant.jpg'
-import shoes from './assets/shoe.jpg'
-import assesories from './assets/assesories.jpg'
+import shirt from './assets/awl-shirts (1).jpg'
+import pant from './assets/awl-pant (3).jpg'
+import shoes from './assets/awl-shoe.jpg'
+import assesories from './assets/awl-cap.jpg'
 import CategoryCard from './CategoryCard'
 
 const categoryData = [
@@ -15,12 +15,12 @@ const categoryData = [
     title: "Trousers"
   },
   {
-    image: assesories,
-    title: "Assessories"
-  },
-  {
     image: shoes,
     title: "Shoes"
+  },
+  {
+    image: assesories,
+    title: "Assessories"
   },
 ]
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import shirt from './assets/shirt.jpg'
+import cap from './assets/awl-cap.jpg'
 import pant from './assets/pant.jpg'
 import shoes from './assets/awl-shoe.jpg'
 
@@ -14,7 +14,7 @@ const Populardeals:React.FC = () => {
         </div>
         <div className="md:w-1/4 lg:w-1/4 flex flex-col justify-center gap-2">
           <div className='h-[10rem] md:h-[14rem] lg:h-[14rem]'>
-            <img src={shirt} alt="img" className="h-full w-full" />
+            <img src={cap} alt="img" className="h-full w-full" />
           </div>
           <div className='h-[10rem] md:h-[14rem] lg:h-[14rem]'>
             <img src={pant} alt="img" className="h-full w-full" />

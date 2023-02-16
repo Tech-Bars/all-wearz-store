@@ -1,5 +1,5 @@
 import React from 'react'
-import shirt from './assets/shirt.jpg'
+import shirt from './assets/awl-shirts (1).jpg'
 import Vector from './assets/Vector.svg'
 
 const Newarrivals:React.FC = () => {
