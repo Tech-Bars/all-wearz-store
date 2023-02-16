@@ -13,7 +13,7 @@ export const Home = () => {
         <div className='bg-headerImage bg-cover bg-center h-[300px] md:h-[400px] lg:h-[400px] rounded-lg' data-aos="zoom-in-up">
         </div>
         <Categories />
-        <Newarrivals />
+        <NewArrivals />
         <Section
           sectionName='Shirts'
           products={shirtsList}
