@@ -1,12 +1,12 @@
 import React from 'react'
 import shirt from './assets/shirt.jpg'
 import pant from './assets/pant.jpg'
-import shoes from './assets/shoe.jpg'
+import shoes from './assets/awl-shoe.jpg'
 
 const Populardeals:React.FC = () => {
   return (
     <div className="w-full md:h-[30rem] lg:h-[30rem] flex gap-2 md:gap-5 lg:gap-5 md:px-5 lg:px-5 my-12 justify-center items-center rounded-lg relative" data-aos="zoom-in-up">
-        <h1 className="p-2 md:p-4 rounded-md text-default text-lg lg:text-3xl md:text-3xl bg-primary md:font-semibold lg:font-semibold absolute right-[10%] top-[45%]">
+        <h1 className="p-2 md:p-4 rounded-md text-default text-lg lg:text-3xl md:text-3xl bg-primary md:font-semibold lg:font-semibold absolute right-[3%]  md:right-[10%] lg:right-[10%] top-50%  md:top-[45%] lg:top-[45%]">
           Popular Deals
         </h1>
         <div className="md:w-1/2 lg:w-1/2 h-[20rem] md:h-[28rem] lg:h-[28rem]">

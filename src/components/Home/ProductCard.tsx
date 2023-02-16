@@ -9,10 +9,11 @@ type Props = {
 
 const ProductCard:React.FC<Props> = ({ image, name, price }:Props) => {
   return (
-    <Link to="/item" className="w-[10rem] md:w-[18rem] lg:w-[18rem] h-auto m-auto shrink-0 flex flex-col items-center cursor-pointer" data-aos="zoom-in-up">
-        <img src={image} alt="shirt" className="w-full" />
-        <p className="">{name}</p>
-        <p>${price}</p>
+    <Link to="/item" className="w-[10rem] md:w-[18rem] lg:w-[18rem] h-[18rem] md:h-[24rem] lg:h-[24rem] overflow-y-hidden m-auto shrink-0 flex flex-col items-center justify-center cursor-pointer" data-aos="zoom-in-up">
+        <img src={image} alt="shirt" className="w-full h-[75%]"/>
+      <div className='w-full grid text-center items-center'>
+        <p className="text-[0.8rem] lg:text-base">{name}</p>
+        <p className="text-[0.9rem] lg:text-base">₦{price}</p>
         <button className='btn-primary w-full text-white flex gap-2 items-center justify-center bg-primary p-1 rounded-md text-[0.8rem]'>
             {/* cart icon */}
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,6 +30,7 @@ const ProductCard:React.FC<Props> = ({ image, name, price }:Props) => {
             </svg>
             Add to Cart
         </button>
+      </div>
     </Link>
   )
 }
