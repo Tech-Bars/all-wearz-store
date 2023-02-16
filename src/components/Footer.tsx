@@ -11,8 +11,8 @@ const icon:IconDefinition[] = [faFacebook, faLinkedin, faEnvelope]
 
 
   return (
-    <div className="w-full px-5 pt-12 mt-20 flex flex-col items-center justify-center bg-[#111827] py-5">
-      <h1 className='text-primary py-8 font-bold tracking-wide'>
+    <div className="w-full px-5 pt-12 mt-20 flex flex-col items-center justify-center bg-primary py-5">
+      <h1 className='text-secondary py-8 font-bold tracking-wide'>
         ALL WEARZ LUXURY
       </h1>
       <div className="w-full flex flex-col md:flex-row lg:flex-row justify-between pt-3 items-center">
