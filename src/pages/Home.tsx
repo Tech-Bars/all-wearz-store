@@ -1,12 +1,10 @@
 import React from 'react'
 import { Header } from '../components/Header'
 import Categories from '../components/Home/Categories'
-import Newarrivals from '../components/Home/Newarrivals'
+import Newarrivals from '../components/Home/NewArrivals'
 import Populardeals from '../components/Home/Populardeals'
-import Shirts from '../components/Home/Shirts'
-import Shoes from '../components/Home/Shoes'
-import { Nav } from '../components/Nav'
-import storeImage from "../assets/all-wearz.jpeg"
+import { shirtsList, shoesList } from '../fakeData'
+import Section from '../components/Home/Section'
 
 export const Home = () => {
   return (
@@ -16,9 +14,15 @@ export const Home = () => {
         </div>
         <Categories />
         <Newarrivals />
+        <Section
+          sectionName='Shirts'
+          products={shirtsList}
+        />
         <Populardeals />
-        <Shirts />
-        <Shoes />
+        <Section
+          sectionName='Shoes'
+          products={shoesList}
+        />
     </div>
   )
 }
