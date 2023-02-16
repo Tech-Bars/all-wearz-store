@@ -3,7 +3,7 @@ import { Header } from '../components/Header'
 import Categories from '../components/Home/Categories'
 import Newarrivals from '../components/Home/NewArrivals'
 import Populardeals from '../components/Home/Populardeals'
-import { shirtsList, shoesList } from '../fakeData'
+import { shirtsList, shoesList, trousersList } from '../fakeData'
 import Section from '../components/Home/Section'
 
 export const Home = () => {
@@ -22,6 +22,10 @@ export const Home = () => {
         <Section
           sectionName='Shoes'
           products={shoesList}
+        />
+        <Section
+          sectionName='Pants'
+          products={trousersList}
         />
     </div>
   )
