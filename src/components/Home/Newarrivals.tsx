@@ -8,7 +8,7 @@ const Newarrivals:React.FC = () => {
       <div className="w-full md:w-1/2 lg:w-1/2 flex-col flex gap-5 text-center items-center md:text-left lg:text-left">
             <h2 className="text-dark font-semibold text-2xl lg:text-3xl md:text-3xl">New Arrivals</h2>
             <span className="font-medium text-2xl">Discover Amazing Deals</span>
-            <button className="flex items-center gap-3 transition-all duration-300 delay-100 ease-in-out hover:scale-110 bg-blue py-3 px-5 text-base text-white rounded-sm w-[162px]">
+            <button className="btn-primary flex items-center gap-3 transition-all duration-300 delay-100 ease-in-out hover:scale-110 bg-primary rounded-md text-base text-white w-max">
               Shop Now 
             <img src={Vector} alt="vector" />
             </button>
