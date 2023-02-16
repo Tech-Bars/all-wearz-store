@@ -26,27 +26,20 @@ export const Nav = () => {
         {showNav 
         &&
         <div className='flex flex-col justify-center items-center fixed md:relative lg:relative left-0 right-0 top-0 min-h-screen md:min-h-0 lg:min-h-0 bg-primary z-50 lg:flex-row md:flex-row gap-6'>
-            {/* close menu bar icon */}
+            {/* close menu bar icon  */}
             <h1 onClick={() => setShowNav(false)}>
                 <svg className='absolute top-5 right-5 md:hidden lg:hidden' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.0304 5.02983L18.9697 3.96924L12.0001 10.9389L5.03041 3.96924L3.96973 5.02983L10.9394 11.9995L3.96973 18.9692L5.03041 20.0298L12.0001 13.0602L18.9697 20.0298L20.0304 18.9692L13.0607 11.9995L20.0304 5.02983Z" fill="black"/>
+                    <path d="M20.0304 5.02983L18.9697 3.96924L12.0001 10.9389L5.03041 3.96924L3.96973 5.02983L10.9394 11.9995L3.96973 18.9692L5.03041 20.0298L12.0001 13.0602L18.9697 20.0298L20.0304 18.9692L13.0607 11.9995L20.0304 5.02983Z" fill="#fff"/>
                 </svg>
             </h1>
-            <Link to="/">New</Link>
-            <Link to="/category/shirts">Shirts</Link>
-            <Link to="/category/trousers">Trousers</Link>
-            <Link to="/category/shoes">Shoes</Link>
-            <Link to="/category/accessories">Accessories</Link>
-            <Link to="/cart" className='md:hidden lg:hidden'>
-                <img src={cart} alt="cart icon" />
-            </Link>
-            <Link to="/account" className='md:hidden lg:hidden'>
-                <img src={avatar} alt="avatar" />
-            </Link>
+            <Link to="/" className='text-white'>New Arrivals</Link>
+            <Link to="/category/shirts" className='text-white'>Shirts</Link>
+            <Link to="/category/trousers" className='text-white'>Trousers</Link>
+            <Link to="/category/shoes" className='text-white'>Shoes</Link>
+            <Link to="/category/accessories" className='text-white'>Accessories</Link>
         </div>
         }
 
-        
         <div className='hidden md:flex lg:flex justify-center items-center gap-6'>
             <Link to="/cart">
                 <img src={cart} alt="cart icon" />
