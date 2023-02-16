@@ -26,9 +26,9 @@ const categoryData = [
 
 const Categories:React.FC = () => {
   return (
-    <div className="font-sora my-4">
-            <h2 className="font-semibold my-4 text-2xl lg:text-3xl md:text-3xl text-primary">Shop by Categories:</h2>
-      <div  className="w-full flex gap-5 justify-between items-center overflow-x-scroll  scrollbar-hide scroll-smooth">
+    <div className="font-sora my-4" data-aos="zoom-in-up">
+            <h2 className="font-semibold my-4 text-xl lg:text-3xl md:text-3xl text-dark">Shop by Categories:</h2>
+      <div  className="w-full grid grid-cols-2 md:flex lg:flex gap-5 justify-between items-center overflow-x-scroll  scrollbar-hide scroll-smooth" data-aos="flip-up">
         {categoryData.map((item, key) => {
           return <CategoryCard 
                   image={item.image}
