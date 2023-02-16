@@ -2,7 +2,7 @@ import React from 'react'
 import shirt from './assets/shirt.jpg'
 import Vector from './assets/Vector.svg'
 
-const Newarrivals:React.FC = () => {
+const NewArrivals:React.FC = () => {
   return (
     <div className="my-4 p-5 md:h-[368px] lg:h-[368px] flex flex-col md:flex-row lg:flex-row w-full gap-5 justify-center bg-[#D9D9D9] items-center font-sora rounded-md m-auto" data-aos="zoom-in-up">
       <div className="w-full md:w-1/2 lg:w-1/2 flex-col flex gap-5 text-center items-center md:text-left lg:text-left">
@@ -20,4 +20,4 @@ const Newarrivals:React.FC = () => {
   )
 }
 
-export default Newarrivals;
+export default NewArrivals;

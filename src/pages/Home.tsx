@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../components/Header'
 import Categories from '../components/Home/Categories'
-import Newarrivals from '../components/Home/NewArrivals'
+import NewArrivals from '../components/Home/NewArrivals'
 import Populardeals from '../components/Home/Populardeals'
 import { shirtsList, shoesList, trousersList } from '../fakeData'
 import Section from '../components/Home/Section'
