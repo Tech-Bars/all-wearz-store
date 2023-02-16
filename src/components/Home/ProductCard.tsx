@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
     image: string,
@@ -8,7 +9,7 @@ type Props = {
 
 const ProductCard:React.FC<Props> = ({ image, name, price }:Props) => {
   return (
-    <div className="w-[10rem] md:w-[18rem] lg:w-[18rem] h-auto m-auto shrink-0 flex flex-col items-center cursor-pointer">
+    <Link to="/item" className="w-[10rem] md:w-[18rem] lg:w-[18rem] h-auto m-auto shrink-0 flex flex-col items-center cursor-pointer">
         <img src={image} alt="shirt" className="w-full" />
         <p className="">{name}</p>
         <p>${price}</p>
@@ -28,7 +29,7 @@ const ProductCard:React.FC<Props> = ({ image, name, price }:Props) => {
             </svg>
             Add to Cart
         </button>
-    </div>
+    </Link>
   )
 }
 
