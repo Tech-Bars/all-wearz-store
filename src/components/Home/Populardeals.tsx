@@ -5,7 +5,7 @@ import shoes from './assets/shoe.jpg'
 
 const Populardeals:React.FC = () => {
   return (
-    <div className="w-full md:h-[30rem] lg:h-[30rem] flex gap-2 md:gap-5 lg:gap-5 md:px-5 lg:px-5 my-4 justify-center items-center rounded-lg relative">
+    <div className="w-full md:h-[30rem] lg:h-[30rem] flex gap-2 md:gap-5 lg:gap-5 md:px-5 lg:px-5 my-4 justify-center items-center rounded-lg relative" data-aos="zoom-in-up">
         <h1 className="p-2 md:p-4 rounded-md text-default text-lg lg:text-3xl md:text-3xl bg-primary md:font-semibold lg:font-semibold absolute right-[10%] top-[45%]">
           Popular Deals
         </h1>

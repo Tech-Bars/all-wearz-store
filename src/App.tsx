@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Cart from './pages/Cart';
@@ -7,8 +7,17 @@ import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import Itemspage from './pages/Items';
 import { Nav } from './components/Nav';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      delay: 600, duration: 700, easing: 'ease-out'
+    })
+  }, [])
+
   return (
     <>
     <Nav />

@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <div className='w-[97%] md:w-[85%] lg:w-[75%] m-auto'>
         <Header />
-        <div className='bg-headerImage bg-cover bg-center h-[300px] md:h-[400px] lg:h-[400px] rounded-lg'>
+        <div className='bg-headerImage bg-cover bg-center h-[300px] md:h-[400px] lg:h-[400px] rounded-lg' data-aos="zoom-in-up">
         </div>
         <Categories />
         <Newarrivals />
