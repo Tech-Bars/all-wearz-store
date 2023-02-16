@@ -8,7 +8,7 @@ type Props = {
 
 const ProductCard:React.FC<Props> = ({ image, name, price }:Props) => {
   return (
-    <div className="w-[10rem] md:w-[18rem] lg:w-[18rem] h-auto shrink-0 flex flex-col items-center">
+    <div className="w-[10rem] md:w-[18rem] lg:w-[18rem] h-auto m-auto shrink-0 flex flex-col items-center cursor-pointer">
         <img src={image} alt="shirt" className="w-full" />
         <p className="">{name}</p>
         <p>${price}</p>
