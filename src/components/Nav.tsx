@@ -10,7 +10,7 @@ export const Nav = () => {
   return (
     <div className='w-screen md:w-[85%] lg:w-[75%] bg-gray-50 border-b fixed top-0 right-0 left-0 m-auto z-50 flex justify-between items-center gap-4 px-4 lg:px-16 md:px-16 py-3'>
         <div>
-            <h3 className='text-center'><b>ALL WEARZ LUXURY</b></h3>
+            <h3 className='text-center text-[10px] md:text-xl lg:text-xl'><b>ALL WEARZ LUXURY.</b></h3>
         </div>
         {!showNav 
         && 
@@ -47,7 +47,7 @@ export const Nav = () => {
         }
 
         
-        <div className='hidden lg:flex md:flex justify-center items-center gap-6'>
+        <div className='hidden md:flex lg:flex justify-center items-center gap-6'>
             <Link to="/cart">
                 <img src={cart} alt="cart icon" />
             </Link>
@@ -56,8 +56,16 @@ export const Nav = () => {
             </Link>
         </div>
 
-        {/* show menu icon */}
-        <div className='md:hidden lg:hidden' onClick={() => setShowNav(true)}>
+        {/* show toggler on mobile */}
+        <div className='flex items-center justify-center gap-4 md:hidden lg:hidden' onClick={() => setShowNav(true)}>
+            <div className='flex justify-center items-center gap-2'>
+                <Link to="/cart">
+                    <img src={cart} alt="cart icon" className='w-5'/>
+                </Link>
+                <Link to="/account">
+                    <img src={avatar} alt="avatar" className='w-5'/>
+                </Link>
+            </div>
             <h1>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.25 5.25H7.5V6.75H23.25V5.25Z" fill="black"/>
