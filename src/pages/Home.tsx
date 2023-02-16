@@ -4,7 +4,7 @@ import Categories from '../components/Home/Categories'
 import Populardeals from '../components/Home/Populardeals'
 import { shirtsList, shoesList, trousersList } from '../fakeData'
 import Section from '../components/Home/Section'
-import Newarrivals from '../components/Home/NewArrivals'
+import Newarrivals from '../components/Home/Newarrivals'
 
 export const Home = () => {
   return (
