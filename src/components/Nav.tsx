@@ -50,7 +50,7 @@ export const Nav = () => {
         </div>
 
         {/* show toggler on mobile */}
-        <div className='flex items-center justify-center gap-4 md:hidden lg:hidden' onClick={() => setShowNav(true)}>
+        <div className='flex items-center justify-center gap-4 md:hidden lg:hidden'>
             <div className='flex justify-center items-center gap-2'>
                 <Link to="/cart">
                     <img src={cart} alt="cart icon" className='w-5'/>
@@ -59,7 +59,7 @@ export const Nav = () => {
                     <img src={avatar} alt="avatar" className='w-5'/>
                 </Link>
             </div>
-            <h1>
+            <h1 onClick={() => setShowNav(true)}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.25 5.25H7.5V6.75H23.25V5.25Z" fill="black"/>
                     <path d="M19.875 11.25H4.125V12.75H19.875V11.25Z" fill="black"/>
