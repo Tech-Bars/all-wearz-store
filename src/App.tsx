@@ -8,6 +8,7 @@ import { Signup } from './pages/Signup';
 import Itemspage from './pages/Items';
 import { Nav } from './components/Nav';
 import MyAccountModal from './components/MyAccountModal';
+import MyAccount from './pages/MyAccount';
 
 function App() {
   const [showAccountModal, setShowAccountModal] = useState<boolean>(false)
@@ -18,7 +19,8 @@ function App() {
         showAccountModal={showAccountModal}
     />
     <MyAccountModal 
-        showAccountModal={showAccountModal}  
+        showAccountModal={showAccountModal}
+        setShowAccountModal={setShowAccountModal}  
     />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -26,6 +28,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/item' element={<Itemspage />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/account' element={<MyAccount />} />
       </Routes>
       <Footer />
     </>
