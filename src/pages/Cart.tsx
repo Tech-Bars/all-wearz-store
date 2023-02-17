@@ -1,5 +1,4 @@
 import React from 'react'
-import { Nav } from '../components/Nav'
 import CartItem from '../components/CartItem';
 import { TbDiscount2 } from "react-icons/tb"
 import { MdShoppingCart } from "react-icons/md"
@@ -7,8 +6,7 @@ import { GiMoneyStack } from "react-icons/gi"
 
 const Cart: React.FC = () => {
   return (
-    <div>
-        <Nav />
+    <div className="mt-20">
         <div className='flex flex-col-reverse lg:w-[60%] md:w-[85%] lg:flex-row md:flex-row gap-6 justify-between p-2 md:p-4 lg:p-4 m-auto '>
             <div className='md:w-[80%] lg:w-[80%] flex flex-col gap-4 shadow-lg p-4'>
                 <h2 className='flex items-center gap-4'> 
