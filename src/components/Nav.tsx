@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, FC, Dispatch } from 'react'
 import { Link } from 'react-router-dom'
 
 import cart from "../assets/cil-cart.svg"
 import avatar from "../assets/Avatar.svg"
 
-export const Nav = () => {
+interface props{
+    showAccountModal:boolean
+    setShowAccountModal:Dispatch<React.SetStateAction<boolean>>
+}
+
+export const Nav:FC<props> =  ({showAccountModal, setShowAccountModal}) => {
     const [showNav, setShowNav] = useState<boolean>(false)
 
   return (
@@ -51,9 +56,9 @@ export const Nav = () => {
             <Link to="/cart">
                 <img src={cart} alt="cart icon" />
             </Link>
-            <Link to="/account">
-                <img src={avatar} alt="avatar" />
-            </Link>
+            <span>
+                <img onClick={()=>{setShowAccountModal(!showAccountModal)}} src={avatar} alt="avatar" />
+            </span>
         </div>
 
         {/* show menu icon */}
