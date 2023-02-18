@@ -8,7 +8,9 @@ export const Nav = () => {
     const [showNav, setShowNav] = useState<boolean>(false)
 
   return (
-    <div className='w-screen md:w-[85%] lg:w-[75%] bg-gray-50 border-b fixed top-0 right-0 left-0 m-auto z-50 flex justify-between items-center gap-4 px-4 lg:px-16 md:px-16 py-3'>
+    <div className='w-screen  bg-gray-50 border-b fixed top-0 right-0 left-0 z-50'>
+        <div className='md:w-[90%] lg:w-[75%] m-auto  flex justify-between items-center gap-4 px-4 lg:px-16 md:px-16 py-3'>
+
         <div>
             <h3 className='text-center text-[10px] md:text-xl lg:text-xl'><b>ALL WEARZ LUXURY.</b></h3>
         </div>
@@ -66,6 +68,7 @@ export const Nav = () => {
                     <path d="M16.5 17.25H0.75V18.75H16.5V17.25Z" fill="black"/>
                 </svg>
             </h1>
+        </div>
         </div>
     </div>
   )
