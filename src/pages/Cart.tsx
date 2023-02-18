@@ -1,5 +1,4 @@
 import React from 'react'
-import { Nav } from '../components/Nav'
 import CartItem from '../components/CartItem';
 import { TbDiscount2 } from "react-icons/tb"
 import { MdShoppingCart } from "react-icons/md"
