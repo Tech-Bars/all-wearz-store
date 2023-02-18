@@ -11,9 +11,9 @@ export const Nav = () => {
     <div className='w-screen  bg-gray-50 border-b fixed top-0 right-0 left-0 z-50'>
         <div className='md:w-[90%] lg:w-[75%] m-auto  flex justify-between items-center gap-4 px-4 lg:px-16 md:px-16 py-3'>
 
-        <div>
+        <Link to="/">
             <h3 className='text-center text-[10px] md:text-xl lg:text-xl'><b>ALL WEARZ LUXURY.</b></h3>
-        </div>
+        </Link>
         {!showNav 
         && 
         <div className='hidden lg:flex md:flex gap-6'>
