@@ -12,7 +12,8 @@ const CartItem: React.FC<PropsWithChildren> = () => {
             <img src={dummy} alt="" className='w-32 h-auto'/>
             <div className='leading-8'>
                 <h4>Beach Wear</h4>
-                <p><span className='text-gray-500'>Color:</span> Red</p>
+                <p><span className='text-gray-500'>Color:</span> Multi Color</p>
+                <p><span className='text-gray-500'>Size:</span> XL</p>
                 <p className='cursor-pointer flex items-center'>
                     <MdDeleteForever  className='text-lg text-red-600'/>
                     &nbsp;Remove
@@ -22,11 +23,11 @@ const CartItem: React.FC<PropsWithChildren> = () => {
         <div className='flex flex-col gap-4'>
             <h4>Quantity</h4>
             <div className='flex gap-2 items-center'>
-                <p className='bg-primary w-max py-1 px-2 cursor-pointer'>
+                <p className='bg-primary text-white w-max py-1 px-2 cursor-pointer'>
                     -
                 </p>
                 <b>1</b>
-                <p className='bg-primary w-max py-1 px-2 cursor-pointer'>
+                <p className='bg-primary text-white w-max py-1 px-2 cursor-pointer'>
                     +
                 </p>
             </div>
