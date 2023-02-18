@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Cart from './pages/Cart';
@@ -10,11 +10,18 @@ import { Nav } from './components/Nav';
 import MyAccountModal from './components/MyAccountModal';
 import MyAccount from './pages/MyAccount';
 import AccountOverview from './components/MyAccount/AccountOverview';
-
-
+import AOS from "aos";
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function App() {
   const [showAccountModal, setShowAccountModal] = useState<boolean>(false)
+
+  useEffect(() => {
+    AOS.init({
+      delay: 600, duration: 700, easing: 'ease-out'
+    })
+  }, [])
+
   return (
     <>
     <Nav 

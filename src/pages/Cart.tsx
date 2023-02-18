@@ -7,7 +7,7 @@ import { GiMoneyStack } from "react-icons/gi"
 const Cart: React.FC = () => {
   return (
     <div>
-        <div className='flex flex-col-reverse lg:w-[60%] md:w-[85%] lg:flex-row md:flex-row gap-6 justify-between p-2 md:p-4 lg:p-4 m-auto '>
+        <div className='flex flex-col-reverse lg:w-[75%] md:w-[90%] lg:flex-row md:flex-row gap-6 justify-between p-2 md:p-4 lg:p-4 m-auto mt-14 md:mt-[5rem] lg:mt-[5rem]'>
             <div className='md:w-[80%] lg:w-[80%] flex flex-col gap-4 shadow-lg p-4'>
                 <h2 className='flex items-center gap-4'> 
                     <MdShoppingCart />
