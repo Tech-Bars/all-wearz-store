@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { Header } from '../components/Header'
 import Categories from '../components/Home/Categories'
 import Populardeals from '../components/Home/Populardeals'

@@ -1,4 +1,4 @@
-import React, { useState, FC, Dispatch } from 'react'
+import { useState, FC, Dispatch } from 'react'
 import { Link } from 'react-router-dom'
 
 import cart from '../assets/cil-cart.svg'

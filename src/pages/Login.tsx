@@ -1,4 +1,3 @@
-import React from 'react'
 import loginSideImage from '../assets/413-Buy-Button-on-Phone-screen.svg'
 
 export const Login = () => {

@@ -1,17 +1,16 @@
 import React from 'react'
-import { faGreaterThan, faLessThan } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import shirt from '../Home/assets/shirt.jpg'
+import { FaGreaterThan, FaLessThan } from 'react-icons/fa'
 
 const Item: React.FC = () => {
     return (
         <div className="w-full flex lg:flex-row flex-col lg:gap-0 gap-5 pb-20 ">
             <div className="lg:w-1/2 w-full flex  lg:justify-center items-center relative">
                 <span className="absolute cursor-pointer right-14 p-4 text-primary bg-secondary transition-all duration-300 delay-75 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
-                    <FontAwesomeIcon icon={faGreaterThan} />
+                    <FaGreaterThan />
                 </span>
                 <span className="absolute cursor-pointer left-14 p-4 text-primary bg-secondary rounded-sm transition-all duration-300 delay-75 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
-                    <FontAwesomeIcon icon={faLessThan} />
+                    <FaLessThan />
                 </span>
                 <img src={shirt} alt="shirt img" className="lg:w-3/5 " />
             </div>

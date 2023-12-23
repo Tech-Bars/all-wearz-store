@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import AccountDetails from './AccountDetails'
 import Address from './Address'
 

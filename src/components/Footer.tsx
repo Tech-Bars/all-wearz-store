@@ -1,15 +1,10 @@
 import React from 'react'
 import Line from '../assets/Line.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import {
-    faFacebook,
-    faLinkedin,
-    IconDefinition,
-} from '@fortawesome/free-brands-svg-icons'
+import {FaEnvelope, FaFacebook, FaLinkedin} from "react-icons/fa"
+
 
 const Footer: React.FC = () => {
-    const icon: IconDefinition[] = [faFacebook, faLinkedin, faEnvelope]
+    const icons = [<FaFacebook />, <FaLinkedin />, <FaEnvelope />]
 
     return (
         <div className="w-full px-5 pt-12 mt-20 flex flex-col items-center justify-center bg-primary py-5">
@@ -25,9 +20,9 @@ const Footer: React.FC = () => {
                     </h1>
                 </div>
                 <div className="flex gap-4 mt-4 justify-center items-center w-max ">
-                    {icon.map((icons) => (
+                    {icons.map((icon) => (
                         <h1 className="text-white text-center m-auto text-2xl">
-                            <FontAwesomeIcon icon={icons} />
+                            {icon}
                         </h1>
                     ))}
                 </div>

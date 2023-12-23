@@ -1,5 +1,3 @@
-import { faTrashCan } from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { PropsWithChildren } from 'react'
 import dummy from '../components/Home/assets/shirt.jpg'
 import { MdDeleteForever } from 'react-icons/md'

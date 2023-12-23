@@ -34,7 +34,7 @@ const Categories: React.FC = () => {
                 className="w-full grid grid-cols-2 md:flex lg:flex gap-5 justify-between items-center overflow-x-scroll  scrollbar-hide scroll-smooth"
                 data-aos="flip-up"
             >
-                {categoryData.map((item, key) => {
+                {categoryData.map((item) => {
                     return (
                         <CategoryCard image={item.image} title={item.title} />
                     )
