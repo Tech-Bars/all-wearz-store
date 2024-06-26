@@ -2,49 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body{
-        @apply 
-        font-sora
+@layer base {
+    body {
+        @apply font-sora
         transition-all
-        duration-300
+        duration-300;
     }
 
     /* defaults */
-    h1{
-        @apply
-        text-3xl
-        sm:text-2xl
-    }
-    
-    h2{
-        @apply
-        text-xl
-        text-primary
-        sm:text-base
-    }
-    
-    h3{
-        font-size: 1.15rem;
-        @apply
-        sm:text-base
-    }
-    
-    h4{
-        font-size: 1.01rem;
-        font-weight: 500;
-        @apply
-        sm:font-normal
-        sm:text-base
-    }
-    
-    p{
-        font-size: 1rem;
-        font-weight: lighter;
-    
+    h1 {
+        @apply text-3xl
+        sm:text-2xl;
     }
 
-    img{
+    h2 {
+        @apply text-xl
+        text-primary
+        sm:text-base;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+        @apply sm:text-base;
+    }
+
+    h4 {
+        font-size: 1.01rem;
+        font-weight: 500;
+        @apply sm:font-normal
+        sm:text-base;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    img {
         max-width: 100%;
         display: block;
         object-fit: cover;
@@ -52,43 +46,38 @@
     }
 }
 
-@layer utilities{
-    .container--child{
-        @apply
-        transition-all
+@layer utilities {
+    .container--child {
+        @apply transition-all
         duration-300
         p-4
         m-auto
         w-55
         mt-16
         sm:min-w-full 
-        md:w-80
+        md:w-80;
     }
 }
 
-@layer components{
-    
-    .flex--col{
-        @apply
-        flex
+@layer components {
+    .flex--col {
+        @apply flex
         flex-col
         gap-2
         justify-center
-        items-center
+        items-center;
     }
 
-    .flex--row{
-        @apply
-        flex
+    .flex--row {
+        @apply flex
         flex-row
         gap-2
         justify-center
-        items-center
+        items-center;
     }
 
-    .btn-primary{
-        @apply
-        bg-primary
+    .btn-primary {
+        @apply bg-primary
         p-2
         md:p-3
         lg:p-3
@@ -96,53 +85,48 @@
         text-default
         hover:opacity-70
         rounded-md
-        w-full
+        w-full;
     }
 
-    .btn-secondary{
+    .btn-secondary {
         font-size: 0.8rem;
         text-transform: capitalize;
-        @apply
-        rounded-md
+        @apply rounded-md
         p-2
         px-4
         bg-secondary
         text-dark
-        cursor-pointer
+        cursor-pointer;
     }
 
-    .btn-secondary:hover{
-        @apply
-        bg-grey
+    .btn-secondary:hover {
+        @apply bg-grey
         border-secondary
         border
-        text-default
+        text-default;
     }
 
-    .btn-small{
+    .btn-small {
         font-size: 0.8rem;
         text-transform: capitalize;
-        @apply
-        rounded-md
+        @apply rounded-md
         px-1
         bg-primary
         text-dark
-        cursor-pointer
+        cursor-pointer;
     }
 
-    input[type=submit]{
-        @apply
-        bg-primary
+    input[type='submit'] {
+        @apply bg-primary
         md:p-3
         lg:p-3
         cursor-pointer
         text-default
-        hover:opacity-70
+        hover:opacity-70;
     }
 
-    input{
-        @apply
-        font-sora
+    input {
+        @apply font-sora
         w-full
         rounded-md
         p-2
@@ -154,9 +138,9 @@
         border
         border-solid
         border-primary
-        caret-primary
+        caret-primary;
     }
-    input:hover{
+    input:hover {
         outline: 1px solid grey;
     }
 }
